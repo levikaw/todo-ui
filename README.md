@@ -2,7 +2,9 @@
 
 ## Description
  
-The UI-service is a funtional React-application with TypeScript and MUI as component library
+The UI-service is a funtional React-application with TypeScript.
+
+MUI used as base component library and `trial` version of AG-grid as tasks list.
 
 ## For the first start 
 

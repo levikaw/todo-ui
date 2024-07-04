@@ -1,0 +1,21 @@
+version: '3.9'
+services:
+  app-ui:
+    restart: always
+    build: .
+    container_name: app-ui
+    environment:
+      REACT_APP_CREDENTIALS: ${REACT_APP_CREDENTIALS}
+      REACT_APP_API_URL: ${REACT_APP_API_URL}
+    ports:
+      - '${PORT}:80'
+    networks:
+      - todo.network
+
+networks:
+  todo.network:
+    external: true
+    name: todo.network
+
+
+
